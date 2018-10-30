@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.playlive" version="1.0" name="[COLOR gold]PLAY LIVE[/COLOR]" provider-name="Play Live">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Play Live</summary>
+        <description>Play Live - Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
+        <disclaimer></disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="repository.play" name="[COLOR lightgreen]Play Repo[/COLOR] Repository" version="2.4" provider-name="The King">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Play Repo">
+            <info compressed="false">https://raw.githubusercontent.com/ThePlayersKlub/Kodi/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ThePlayersKlub/Kodi/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ThePlayersKlub/Kodi/master/zips/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Install My Addons</summary>
+            <description>Download and install addons from The King!</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
